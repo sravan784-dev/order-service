@@ -1,15 +1,15 @@
 version:0.2
 
 phases:
- build:
-  commands:
-    -echo Enter the build phase...
-	-mvn clean package
- post_build:
-  commands:
-   -echo Enter the build completed successfully
+  build:
+    commands:
+      -echo Enter the build phase...
+	  -mvn clean package
+  post_build:
+    commands:
+     -echo Enter the build completed successfully
 artifacts:
- files:
-  -target/order-service.jar
- discard-paths: yes
+  files:
+    -target/order-service.jar
+  discard-paths: yes
   
